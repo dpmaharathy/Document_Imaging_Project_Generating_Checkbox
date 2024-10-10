@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+% Header
+\newcommand\header{
+    \noindent
+    \textbf{STATE OF CONNECTICUT JUDICIAL BRANCH} \\
+    CASE TYPE CODES \\
+    October, 2015 \\
+}
+
+% Begin document
+\begin{document}
+\pagestyle{empty}
+
+% Centering the header
+\begin{center}
+    \header
+\end{center}
+
+% Table
+\noindent
+\begin{tabularx}{\linewidth}{|l|X|l|X|}
+    \hline
+    \textbf{MAJOR DESCRIPTION} & \textbf{Codes Major/Minor} & & \textbf{MINOR DESCRIPTION} \\
+    \hline
+    Appeals from Administrative Boards & A 00 & & Zoning \\
+    \cline{2-4}
+    & A 10 & & Taxation \\
+    & A 20 & & Liquor \\
+    & A 30 & & Motor Vehicle Commissioner \\
+    & \CheckBox[]{A 40} & & Unemployment \\
+    & \CheckBox[]{A 50} & & Worker's Compensation \\
+    & \CheckBox[]{A 60} & & Labor Relations Board \\
+    & \CheckBox[]{A 61} & & Environmental Protection Commissioner - State \\
+    & \CheckBox[]{A 62} & & Commission on Hospitals/Healthcare \\
+    & \CheckBox[]{A 63} & & Employees Review Board \\
+    & \CheckBox[]{A 64} & & Social Services Commission \\
+    & \CheckBox[]{A 65} & & Freedom of Information Commission \\
+    & A 66 & & Inland Wetlands & Conservation Commission - Local \\
+    & A 67 & & Retirement Commission \\
+    & A 68 & & Housing and Building Code Enforcement \\
+    & A 69 & & Human Rights and Opportunities Commission \\
+    & A 70 & & Department of Children and Families \\
+    & A 90 & & All other \\
+    \hline
+\end{tabularx}
+
+\end{document}

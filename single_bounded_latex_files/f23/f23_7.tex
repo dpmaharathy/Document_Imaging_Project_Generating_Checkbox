@@ -1,0 +1,55 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+% Format for section titles
+\newcommand{\sectiontitle}[1]{{\large\textbf{#1}}\vspace{0.5em}}
+
+% Checkbox command from the hyperref package
+\newcommand{\checkbox}{\hspace{1mm}\Square\hspace{0.5mm}}
+
+% List style
+\setlist[itemize]{leftmargin=*, label={}}
+
+% Footer
+\newcommand{\footer}{
+    \vfill
+    {\footnotesize Form 870 06/1999 \hfill aoc-checklist-approval of erops application \hfill Page 4 of 4}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+\sectiontitle{2: Airworthiness Approval of Extended Range Operations by Twin-Engine Aircraft}
+
+Applicant \underline{\hspace{5cm}} Aircraft Type \& Model \underline{\hspace{5cm}}
+
+\vspace{1em}
+
+\textbf{CAO 20.7.1B} Are the additional airworthiness requirements of CAO 20.7.1B met for each aircraft. \CheckBox[bordercolor = 1 1 1, ]{ Yes} \CheckBox[bordercolor = 1 1 1, ]{No}
+
+\vspace{1em}
+
+\textbf{AD/GEN/69} Are the additional airworthiness requirements of AD/GEN/69 met for each aircraft including:
+
+\begin{itemize}
+    \item Type design approval? \underline{\hspace{3cm}} \CheckBox[bordercolor = 1 1 1, ]{ Yes} \CheckBox[bordercolor = 1 1 1, ]{No}
+    \item In-service experience? \underline{\hspace{3cm}} \CheckBox[bordercolor = 1 1 1, ]{ Yes} \CheckBox[bordercolor = 1 1 1, ]{No}
+    \item \textbf{Flight Manual} amendment? \underline{\hspace{3cm}} \CheckBox[bordercolor = 0 0 0,  ]{ Yes} \CheckBox[bordercolor = 1 1 1, ]{No}
+    \item Additional maintenance? \underline{\hspace{3cm}} \CheckBox[bordercolor = 1 1 1, ]{ Yes} \CheckBox[bordercolor = 1 1 1, ]{No}
+    \item Airworthiness flight dispatch? \underline{\hspace{3cm}} \CheckBox[bordercolor = 1 1 1, ]{ Yes} \CheckBox[bordercolor = 1 1 1, ]{No}
+    \item Reliability monitoring? \underline{\hspace{3cm}} \CheckBox[bordercolor = 1 1 1, ]{ Yes} \CheckBox[bordercolor = 1 1 1, ]{No}
+\end{itemize}
+
+\vspace{1em}
+
+Signed \underline{\hspace{5cm}} Airworthiness Inspector \hspace{2em} Printed Name \underline{\hspace{5cm}}
+
+\vspace{1em}
+
+Date \underline{\hspace{5cm}}
+
+\footer
+
+\end{document}

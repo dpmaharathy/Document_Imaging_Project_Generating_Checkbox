@@ -1,0 +1,41 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb} % for checkboxes
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\includegraphics[height=1cm]{logo.png}} % Placeholder for logo
+\rhead{Checklist — Defect Reports}
+\renewcommand{\headrulewidth}{2pt}
+\setlength{\headheight}{36pt} 
+\cfoot{Form 270 06/1999 \hfill aoc-checklist-defect report \hfill Page 1 of 1}
+
+% Checkboxes
+\newcommand{\checkbox}{\ensuremath{\square}}
+
+\begin{document}
+
+\section*{Australian Government}
+\subsection*{Civil Aviation Safety Authority}
+
+% List of questions
+\begin{itemize}[leftmargin=*]
+    \item Are procedures for defect reporting satisfactory? \hfill \CheckBox[bordercolor = 1 1 1, ]{Yes}  \CheckBox[bordercolor = 1 1 1, ]{No} 
+    \item Are procedures and responsibilities for analyzing the defect reports satisfactory? \hfill \CheckBox[bordercolor = 1 1 1, ]{Yes}  \CheckBox[bordercolor = 1 1 1, ]{No} 
+    \item Does the operator have procedures for liaison with manufacturers and CASA? \hfill \CheckBox[bordercolor = 1 1 1, ]{Yes}  \CheckBox[bordercolor = 1 1 1, ]{No} 
+    \item Has the operator defined a deferred defect policy? \hfill \CheckBox[bordercolor = 1 1 1, ]{Yes}  \CheckBox[bordercolor = 1 1 1, ]{No} 
+    \item Has the operator established a procedure to be followed in order to be sure that the deferment of any defect will not lead to any safety concern? \hfill \CheckBox[bordercolor = 1 1 1, ]{Yes}  \CheckBox[bordercolor = 1 1 1, ]{No} 
+    \item Are these procedures adequately documented and available to those who need to know? \hfill \CheckBox[bordercolor = 1 1 1, ]{Yes}  \CheckBox[bordercolor = 0 0 0,  ]{No} 
+\end{itemize}
+
+\vspace{1cm}
+\noindent Signed \hrulefill
+
+\noindent Airworthiness Inspector \hrulefill
+
+\noindent Date \hrulefill
+
+\end{document}

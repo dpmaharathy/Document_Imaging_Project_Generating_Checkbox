@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Header setup
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{2pt}
+\fancyhead[C]{AO 110 (Rev. 6/09) Subpoena to Testify Before Grand Jury (Page 2)}
+
+% Footer setup - place for buttons (in an interactive PDF, these would be clickable)
+\newcommand{\footerbutton}[1]{%
+  \fcolorbox{black}{red!30}{\makebox[2cm][c]{#1}}%
+}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[L]{\footerbutton{Print}\hspace{1mm}\footerbutton{Save As...}\hspace{1mm}\footerbutton{Add Attachment}}
+\fancyfoot[R]{\footerbutton{Reset}}
+
+\begin{document}
+
+\section*{\centering PROOF OF SERVICE}
+
+\noindent
+This subpoena for \underline{\hspace{5cm}} (name of individual or organization) was received by me on (date) \underline{\hspace{4cm}}.
+
+\begin{itemize}[leftmargin=*]
+    \item \CheckBox[bordercolor = 0 0 0,  ]{I served the subpoena by delivering a copy to the named person as follows:} \underline{\hspace{10cm}}\\
+    on (date) \underline{\hspace{4cm}}; or
+    \item \CheckBox[bordercolor = 1 1 1, ]{I returned the subpoena unexecuted because:} \underline{\hspace{10cm}}.
+\end{itemize}
+
+I declare under penalty of perjury that this information is true.
+
+\vspace{10pt}
+
+\noindent
+\makebox[3in]{\hrulefill} \hfill \makebox[3in]{\hrulefill}\\
+Date \hfill Server's signature
+
+\vspace{10pt}
+
+\noindent
+\makebox[3in]{\hrulefill} \hfill \makebox[3in]{\hrulefill}\\
+Printed name and title \hfill Server's address
+
+\vspace{20pt}
+
+\noindent
+Additional information regarding attempted service, etc:\\
+\underline{\hspace{\textwidth}}
+
+\end{document}

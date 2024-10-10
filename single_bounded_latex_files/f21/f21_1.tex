@@ -1,0 +1,66 @@
+\documentclass[12pt,english]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{babel, scrlayer-notecolumn, setspace, booktabs, ragged2e, perpage, xcolor, xspace, blindtext}
+\usepackage{hyperref}
+
+% Checkboxes
+\usepackage{enumitem}
+\usepackage{pifont}
+\newcommand{\checkbox}{\item[\ding{52}]}
+
+%%%%% Marginnotes with scrlayer-notecolumn, xcolor and perpage
+%% We have to reduce the width of the text using addmargin:
+%% \begin{addmargin}[0cm]{1cm}
+
+\DeclareNewNoteColumn[font=\sffamily\footnotesize\RaggedRight, width=3cm, position=\oddsidemargin+1in+\textwidth-1cm+\marginparsep]{randnot}
+
+\newcounter{Rnnr}
+\MakePerPage{Rnnr}% Counterreset every new page
+% with package perpage, there also is zref-perpage
+\renewcommand{\theRnnr}{\alph{Rnnr}}% print letters as anchors
+\newcommand{\Anm}[1]{%
+  \refstepcounter{Rnnr}%
+  \textcolor{red}{\textsuperscript{\textit{\theRnnr}}}% Anker im Text
+  \makenote[randnot]{% Randnotiz
+    \textsuperscript{\theRnnr}#1\xspace}} %%Randnotentext
+%%%%% \renewcommand{\Anm[1]}{}
+%%%% deletes Anm
+
+\begin{document}
+\begin{addmargin}[0pt]{1cm}
+  \section*{Introduction}
+  \blindtext
+
+  % \section*{Objective}
+  % \blindtext
+
+  % \section*{Methodology}
+  % \blindtext\Anm{%
+  %   \begin{tabular}{lr}
+  %     Method 1 & 10\\
+  %     Method 2 & 20\\
+  %     Method 3 & 30\\
+  %   \end{tabular}
+  % }
+
+  % \section*{Results}
+  % \blindtext
+
+  \section*{Discussion}
+  \blindtext
+
+  % \section*{Conclusion}
+  % \blindtext
+
+  \section*{Recommendations}
+  \begin{itemize}[label={}]
+    \item \CheckBox[bordercolor = 0 0 0,  ]{Recommendation 1}
+    \item \CheckBox[bordercolor = 1 1 1, ]{Recommendation 2}
+    \item \CheckBox[bordercolor = 1 1 1, ]{Recommendation 3}
+  \end{itemize}
+
+  \section*{References}
+  \blindtext
+\end{addmargin}
+\end{document}

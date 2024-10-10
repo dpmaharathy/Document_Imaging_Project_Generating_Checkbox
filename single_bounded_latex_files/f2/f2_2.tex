@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{enumitem} % Load enumitem before hyperref
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+
+\begin{document}
+
+\begin{Form}
+\section*{Survey Form}
+
+\subsection*{Personal Information}
+\begin{tabular}{|p{3.5cm}|p{6cm}|}
+    \hline
+    Name: & \TextField[name=name, width=6cm]{} \\
+    \hline
+    Age: & \TextField[name=age, width=6cm]{} \\
+    \hline
+    Occupation: & \TextField[name=occupation, width=6cm]{} \\
+    \hline
+\end{tabular}
+
+\subsection*{Interests}
+\begin{itemize}
+    \item[{\CheckBox[bordercolor = 1 1 1, name=interest1]{}}] Interest1
+    \item[{\CheckBox[bordercolor = 0 0 0,  name=interest2]{}}] Interest2
+    \item[{\CheckBox[bordercolor = 1 1 1, name=interest3]{}}] Interest3
+\end{itemize}
+
+\subsection*{Preferences}
+\begin{itemize}
+    \item[{\CheckBox[bordercolor = 1 1 1, name=preference1]{}}] Preference1
+    \item[{\CheckBox[bordercolor = 1 1 1, name=preference2]{}}] Preference2
+    \item[{\CheckBox[bordercolor = 1 1 1, name=preference3]{}}] Preference3
+\end{itemize}
+
+\subsection*{Agreement}
+I agree to participate in this survey voluntarily and understand that my responses will be used for research purposes only.\\[0.2cm]
+\CheckBox[bordercolor = 1 1 1, name=agreement]{} I agree.
+
+\subsection*{Signature}
+\TextField[name=signature, width=6cm]{}
+
+\subsection*{Date}
+\TextField[name=date, width=6cm]{}
+
+\end{Form}
+
+\end{document}

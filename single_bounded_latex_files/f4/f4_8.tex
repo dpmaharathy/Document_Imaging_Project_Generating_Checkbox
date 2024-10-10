@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{enumitem} % Load enumitem before hyperref
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+
+\begin{document}
+
+\begin{Form}
+\section*{Event Registration Form}
+
+\subsection*{Participant Information}
+\begin{tabular}{|p{3.5cm}|p{6cm}|}
+    \hline
+    Name: & \TextField[name=name, width=6cm]{} \\
+    \hline
+    Age: & \TextField[name=age, width=6cm]{} \\
+    
+\end{tabular}
+
+\subsection*{Event Selection}
+\begin{itemize}
+    \item[{\CheckBox[bordercolor = 1 1 1, name=event1]{}}] Event1
+    \item[{\CheckBox[bordercolor = 1 1 1, name=event2]{}}] Event2
+    \item[{\CheckBox[bordercolor = 1 1 1, name=event3]{}}] Event3
+\end{itemize}
+
+\subsection*{Accommodation Preference}
+\begin{itemize}
+    \item[{\CheckBox[bordercolor = 1 1 1, name=accommodation1]{}}] Single Room
+    \item[{\CheckBox[bordercolor = 1 1 1, name=accommodation2]{}}] Double Room
+    \item[{\CheckBox[bordercolor = 1 1 1, name=accommodation3]{}}] Shared Dormitory
+\end{itemize}
+
+\subsection*{Transportation Requirements}
+\begin{itemize}
+    \item[{\CheckBox[bordercolor = 1 1 1, name=transport1]{}}] Airport Pickup
+    \item[{\CheckBox[bordercolor = 0 0 0,  name=transport2]{}}] Shuttle Service
+    \item[{\CheckBox[bordercolor = 1 1 1, name=transport3]{}}] None
+\end{itemize}
+
+\subsection*{Emergency Contact}
+\begin{tabular}{|p{3.5cm}|p{6cm}|}
+    \hline
+    Name: & \TextField[name=emergency_name, width=6cm]{} \\
+    \hline
+    Phone Number: & \TextField[name=emergency_phone, width=6cm]{} \\
+\end{tabular}
+
+\subsection*{Medical Information}
+\begin{itemize}
+    \item[{\CheckBox[bordercolor = 1 1 1, name=medical_condition1]{}}] Medical Condition 1
+    \item[{\CheckBox[bordercolor = 1 1 1, name=medical_condition2]{}}] Medical Condition 2
+    \item[{\CheckBox[bordercolor = 1 1 1, name=medical_condition3]{}}] Medical Condition 3
+\end{itemize}
+
+% \subsection*{Consent}
+% I agree to abide by the rules and regulations of the event.\\[0.2cm]
+% \CheckBox[bordercolor = 1 1 1, name=consent]{} I agree.
+
+% \subsection*{Signature}
+% \TextField[name=signature, width=6cm]{}
+
+
+\end{Form}
+
+\end{document}

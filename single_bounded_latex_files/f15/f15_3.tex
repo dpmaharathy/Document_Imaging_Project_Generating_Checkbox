@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{hyperref}
+\begin{document}
+
+\title{Document with Different Layout}
+\author{Your Name}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus feugiat dapibus dui, ac pulvinar justo gravida eget. Nullam quis tempor est.
+
+\section{Main Content}
+\subsection{Features}
+\begin{itemize}[label=\textbullet]
+    \item Lorem ipsum dolor sit amet
+    \item Consectetur adipiscing elit
+    \item Phasellus feugiat dapibus dui
+    \item Nullam quis tempor est
+\end{itemize}
+
+\subsection{Tasks}
+\begin{enumerate}
+    \item \CheckBox[bordercolor = 1 1 1, ]{Lorem ipsum dolor sit amet}
+    \item \CheckBox[bordercolor = 1 1 1, ]{Consectetur adipiscing elit}
+    \item \CheckBox[bordercolor = 0 0 0,  ]{Phasellus feugiat dapibus dui}
+    \item \CheckBox[bordercolor = 1 1 1, ]{Nullam quis tempor est}
+\end{enumerate}
+
+\subsection{Checklist}
+\begin{tabularx}{\textwidth}{|X|c|}
+    \hline
+    \multicolumn{2}{|c|}{\textbf{Checklist}} \\
+    \hline
+    \textbf{Task} & \textbf{Done} \\
+    \hline
+    Lorem ipsum dolor sit amet & \CheckBox[bordercolor = 1 1 1, width = 0.5 em , height = 0.5 em]{Yes} \CheckBox[bordercolor = 1 1 1, width = 0.5 em , height = 0.5 em]{No} \\
+    \hline
+    Consectetur adipiscing elit & \CheckBox[bordercolor = 1 1 1, width = 0.5 em , height = 0.5 em]{Yes} \CheckBox[bordercolor = 1 1 1, width = 0.5 em , height = 0.5 em]{No}  \\
+    \hline
+    Phasellus feugiat dapibus dui & \CheckBox[bordercolor = 1 1 1, width = 0.5 em , height = 0.5 em]{Yes} \CheckBox[bordercolor = 1 1 1, width = 0.5 em , height = 0.5 em]{No}  \\
+    \hline
+    Nullam quis tempor est & \CheckBox[bordercolor = 1 1 1, width = 0.5 em , height = 0.5 em]{Yes} \CheckBox[bordercolor = 1 1 1, width = 0.5 em , height = 0.5 em]{No}  \\
+    \hline
+\end{tabularx}
+
+
+\end{document}

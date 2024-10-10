@@ -1,0 +1,132 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+% Define colors
+\definecolor{headercolor}{RGB}{0, 0, 128}
+\definecolor{footerlinecolor}{RGB}{192, 192, 192}
+
+% Header and footer setup
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{{\color{headercolor} For more information, visit our website:} \url{www.window.state.tx.us/taxinfo/proptax}}
+\lfoot{{\color{headercolor} Page 2 - 50-135 - 12-13/12}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\footrule}{{\color{footerlinecolor}\hrule width\headwidth height\footrulewidth \vskip-\footrulewidth}}
+
+\begin{document}
+
+% Property Tax Header
+\noindent
+\textbf{\colorbox{headercolor}{\parbox{\dimexpr\textwidth-2\fboxsep}{\color{white}\textbf{Property Tax \hspace{3mm} Form 50-135}}}}
+
+\vspace{2mm} % Spacing
+
+% Title
+\noindent
+{\large \textbf{Application for Disabled Veteran’s or Survivor’s Exemption}}
+
+\vspace{2mm} % Spacing
+
+% STEP 2: Property Information
+\noindent
+\textbf{STEP 2: Property Information}
+
+\noindent
+Address, City, State, ZIP Code \underline{\hspace{5.5cm}}
+
+Legal Description (if known) \underline{\hspace{4.5cm}} Appraisal District Account Number (if known) \underline{\hspace{4.5cm}}
+
+Manufactured Home (make, model, and identification number) \underline{\hspace{15cm}}
+
+% STEP 3: Type of Exemption and Qualifications
+\noindent
+\textbf{STEP 3: Type of Exemption and Qualifications}
+
+\noindent
+Check the exemption for which you are applying.
+
+\noindent
+\CheckBox[bordercolor = 1 1 1, name=disabledveteran]{} Disabled Veteran’s Exemption
+
+\noindent
+\CheckBox[bordercolor = 0 0 0,  name=survivingspousechild]{} Surviving Spouse or Child of a Deceased Disabled Veteran
+
+\noindent
+\CheckBox[bordercolor = 1 1 1, name=survivingarmedservice]{} Surviving Spouse or Child of Armed Service Member who died on Active Duty
+
+Please provide the following information and attach documentation from the V.A. or service branch identifying the most recent disability rating.
+
+Veteran's Name \underline{\hspace{6cm}}
+
+Branch of Service \underline{\hspace{4.5cm}} Disability Rating \underline{\hspace{4.5cm}} Age \underline{\hspace{2cm}} Serial Number \underline{\hspace{4cm}}
+
+\vspace{2mm} % Spacing
+
+% Further questions with checkboxes
+\noindent
+Does the service connected disability include:
+\begin{itemize}
+  \item Loss of one or more limbs \CheckBox[bordercolor = 1 1 1, ]{} Yes \CheckBox[bordercolor = 1 1 1, ]{} No \hspace{10mm} Blindness in one or both eyes \CheckBox[bordercolor = 1 1 1, ]{} Yes \CheckBox[bordercolor = 1 1 1, ]{} No
+\end{itemize}
+
+\noindent
+Are you the surviving spouse? \hspace{1cm} \CheckBox[bordercolor = 1 1 1, ]{} Yes \CheckBox[bordercolor = 1 1 1, ]{} No
+
+If yes, have you remarried? \hspace{1cm}\CheckBox[bordercolor = 1 1 1, ]{} Yes \CheckBox[bordercolor = 1 1 1, ]{} No
+
+\vspace{2mm} % Spacing
+
+\noindent
+Are you a surviving child? \hspace{1.7cm} \CheckBox[bordercolor = 1 1 1, ]{} Yes \CheckBox[bordercolor = 1 1 1, ]{} No
+
+If yes, are you:
+\begin{itemize}
+  \item Under 18 years of age? \hspace{1.2cm} \CheckBox[bordercolor = 1 1 1, ]{} Yes \CheckBox[bordercolor = 1 1 1, ]{} No
+  \item Unmarried? \hspace{2.3cm} \CheckBox[bordercolor = 1 1 1, ]{} Yes \CheckBox[bordercolor = 1 1 1, ]{} No
+\end{itemize}
+
+Number of qualifying parent's children who are under 18 and unmarried \underline{\hspace{3cm}}
+
+\vspace{2mm} % Spacing
+
+% STEP 4: Late Application
+\noindent
+\textbf{STEP 4: Late Application}
+
+\noindent
+If you were eligible for this exemption last year, check this box and enter the prior tax year. You must have met all of the qualifications above on January 1 of the prior tax year to receive the exemption for last year.
+
+\noindent
+\CheckBox[bordercolor = 1 1 1, name=prioryearexemption]{} Application for exemption for prior tax year, \underline{\hspace{3cm}}.
+
+\vspace{2mm} % Spacing
+
+% STEP 5: Certification and Signature
+\noindent
+\textbf{STEP 5: Certification and Signature}
+
+By signing this application, you certify the information provided in this application is true and correct to the best of your knowledge and belief.
+
+\vspace{5mm} % Spacing for signature
+
+\noindent
+\textbf{Print Name} \underline{\hspace{7cm}} \textbf{Title} \underline{\hspace{7cm}}
+
+\vspace{2mm} % Spacing
+
+\noindent
+\textbf{Authorized Signature} \underline{\hspace{7.5cm}} \textbf{Date} \underline{\hspace{3cm}}
+
+\vspace{2mm} % Warning message
+\noindent
+If you make a false statement on this application, you could be found guilty of a Class A misdemeanor or a state jail felony under Penal Code Section 37.10.
+
+\vspace{2mm} % Spacing
+
+% Footer
+\end{document}

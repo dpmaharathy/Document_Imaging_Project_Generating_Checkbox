@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{amssymb} % for checkboxes
+\usepackage{graphicx}
+\usepackage{hyperref}
+\begin{document}
+\pagestyle{empty} % Remove page numbers
+
+% Header section
+\noindent
+\begin{tabular}{p{\linewidth}}
+    \hline
+    \textbf{CORRECTED} \hfill \textbf{PUBLICLY TRADED PARTNERSHIP} \\
+    PARTNERSHIP'S name, street address, city, state, and ZIP code. \\
+    \textbf{2016} \hfill \textbf{OMB No. 1545-0123} \\
+    Schedule K-1 (Form 1065-B) \\
+    Partner's Share of Income (Loss) From an Electing Large Partnership \\
+    \hline
+\end{tabular}
+
+\vspace{1em}
+
+% Partner's information section
+\noindent
+\begin{tabular}{@{}ll@{}}
+    \begin{tabular}[t]{@{}l@{}}
+        PARTNERSHIP'S Employer I.D. number \\
+        PARTNER'S Identifying number \\
+        \hline
+        PARTNER'S name \\
+        Street address (including apt. no.) \\
+        City, state, and ZIP code \\
+        \hline
+    \end{tabular} &
+    \begin{tabular}[t]{@{}l@{}}
+        \textbf{For Electing Large Partnership} \\
+        For Paperwork Reduction Act Notice see instructions. \\
+    \end{tabular}
+\end{tabular}
+
+\vspace{1em}
+
+% Checkboxes section
+\noindent
+\begin{tabular}{|m{0.05\textwidth}|m{0.85\textwidth}|}
+    \hline
+    \CheckBox[bordercolor = 1 1 1, ]{1} &  Taxable income (loss) from passive activities \\ \hline \\
+    \CheckBox[bordercolor = 1 1 1, ]{2}  &  Taxable income (loss) from other activities \\ \hline  \\
+    \CheckBox[bordercolor = 1 1 1, ]{3}  &  Qualified dividends \\ \hline  \\
+    \CheckBox[bordercolor = 1 1 1, ]{4}  &  Net capital gain (loss) from passive activities \\ \hline  \\
+    \CheckBox[bordercolor = 0 0 0,  ]{5}  &  Net capital gain (loss) from other activities \\ \hline  \\
+    % ... add more rows as needed
+    \hline
+\end{tabular}
+\end{document}

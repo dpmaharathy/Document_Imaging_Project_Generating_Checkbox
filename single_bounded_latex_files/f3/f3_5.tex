@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{enumitem} % Load enumitem before hyperref
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+
+\begin{document}
+
+\begin{Form}
+\section*{Feedback Form}
+
+\subsection*{Personal Information}
+\begin{tabular}{|p{3.5cm}|p{6cm}|}
+    \hline
+    Name: & \TextField[name=name, width=6cm]{} \\
+    \hline
+    Phone Number: & \TextField[name=phone, width=6cm]{} \\
+    \hline
+\end{tabular}
+
+\subsection*{Feedback}
+\begin{itemize}
+    \item[{\CheckBox[bordercolor = 1 1 1, name=feedback1]{}}] Feedback1
+    \item[{\CheckBox[bordercolor = 1 1 1, name=feedback2]{}}] Feedback2
+    \item[{\CheckBox[bordercolor = 1 1 1, name=feedback3]{}}] Feedback3
+\end{itemize}
+
+\subsection*{Satisfaction}
+\begin{itemize}
+    \item[{\CheckBox[bordercolor = 1 1 1, name=satisfaction1]{}}] Satisfied
+    \item[{\CheckBox[bordercolor = 0 0 0,  name=satisfaction2]{}}] Neutral
+    \item[{\CheckBox[bordercolor = 1 1 1, name=satisfaction3]{}}] Dissatisfied
+\end{itemize}
+
+\subsection*{Consent}
+I consent to the processing of my feedback for improvement purposes.\\[0.2cm]
+\CheckBox[bordercolor = 1 1 1, name=consent]{} I consent.
+
+\subsection*{Signature}
+\TextField[name=signature, width=6cm]{}
+
+
+
+\end{Form}
+
+\end{document}

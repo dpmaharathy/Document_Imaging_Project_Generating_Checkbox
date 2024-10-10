@@ -1,0 +1,47 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{amssymb} % for checkboxes
+\usepackage{array}
+\usepackage{hyperref}
+% Define checkbox (note that this will not create an interactive checkbox)
+\newcommand{\checkbox}{\Square}
+
+% Header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{VA FORM 10-10HS MAR 2015}
+\fancyfoot[R]{PAGE 2}
+
+% Increase line spacing slightly
+\renewcommand{\baselinestretch}{1.2}
+
+\begin{document}
+
+\noindent \textbf{Request for Hardship Determination, Continued}
+
+\section*{HARDSHIP DETERMINATION (to be completed by VA)}
+Hardship Granted: (circle one) \\
+\CheckBox[bordercolor = 0 0 0,  ]{YES Hardship is granted} \\
+\hspace*{6mm}Note: The exemption is effective from the date the Veteran submitted the request until the last day of the calendar year in which the request was made. \\
+\CheckBox[bordercolor = 1 1 1, ]{NO State reason not granted in comments.}
+
+\vspace{2mm} % Provide some space between sections
+Date Veteran's electronic record updated in VA's information system: \hrulefill
+
+\vspace{2mm} % Provide some space between sections
+VHA Staff Signature: \hrulefill
+
+\vspace{2mm} % Provide some space between sections
+Date: \hrulefill
+
+\section*{COMMENTS}
+Document and/or attach any pertinent information impacting on the final decision.
+\hrulefill % Fill line for comments
+\hrulefill % Fill line for comments
+
+\section*{VETERAN NOTIFICATION}
+Date Veteran Notified: \hrule
+\end{document}

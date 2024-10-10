@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{amssymb} % For checkboxes
+\usepackage[table]{xcolor} % For coloring cells
+\usepackage{hyperref}
+
+% For checkboxes
+\newcommand{\checkbox}{\hspace{1pt}$\square$\hspace{1pt}}
+
+% Define cell color
+\definecolor{cellgray}{RGB}{220,220,220}
+
+\begin{document}
+\pagestyle{empty} % Remove page numbers
+
+% Heading section
+\noindent
+\textbf{FORM NO. 49B} \\
+\textit{[See sections 203A and rule 114A]} \\
+\textbf{Form of application for allotment of tax deduction and collection account number under section 203A of the Income-tax Act, 1961}
+
+% Addressing section
+\vspace{5mm} % Some vertical space
+\noindent
+To \\
+The Assessing Officer (TDS/TCS) \\
+\vspace{5mm} % Some vertical space
+
+% Table for Assessing Officer codes
+\noindent
+\begin{tabular}{|>{\bfseries}m{2.5in}|m{2.5in}|}
+    \hline
+    Assessing Officer Code (TDS/TCS) & Area Code \\
+    \hline
+    AO Type & Range Code \\
+    \hline
+\end{tabular}
+\vspace{5mm}
+
+% Your Details Section
+\noindent
+\textbf{Name} \\
+\indent Central / State Government: \CheckBox[bordercolor = 0 0 0,  ]{Tick the appropriate entry } \\
+\noindent
+\begin{tabular}{|m{1.5in}|m{1.5in}|m{1.5in}|m{1.5in}|}
+    \hline
+    \rowcolor{cellgray} Central Government & Local Authority (Central Government) & State Government & Local Authority (State Government) \\
+    \hline
+\end{tabular}
+
+% Details for Person Responsible
+\vspace{5mm}
+\noindent
+\textbf{Designation of person responsible for making payment/collecting tax} \\
+\noindent
+\begin{tabular}{|m{1.5in}|m{1.5in}|}
+    \hline
+    \rowcolor{cellgray} Statutory Body & Autonomous Body \\
+    \hline
+    \multicolumn{2}{|c|}{\cellcolor{white}} \\
+    \hline
+\end{tabular}
+
+\vspace{5mm}
+\noindent
+[Rest of the form]
+
+\vfill
+\noindent
+Printed from www.incometaxindia.gov.in \hfill Page 1 of 4
+
+\end{document}

@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{lipsum}
+
+\begin{document}
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item \textbf{Personal Information:}
+    \begin{itemize}
+        \item Name: \TextField{}
+        \item Date of Birth: \TextField{}
+        \item Gender: \CheckBox[]{Male} \CheckBox[]{Female} 
+    \end{itemize}
+    
+    \item \textbf{Education:}
+    \begin{itemize}
+        \item Highest Degree: \TextField{}
+        \item Year of Graduation: \TextField{}
+    \end{itemize}
+    
+    \item \textbf{Employment History:}
+    \begin{itemize}
+        \item Current Employer: \TextField{}
+        \item Position: \TextField{}
+    \end{itemize}
+    
+    \item \textbf{Health Declaration:}
+    \begin{itemize}
+        \item Do you have any medical conditions? \CheckBox[]{Yes}  \CheckBox[]{No}
+        \item If yes, please specify: \TextField{}
+    \end{itemize}
+    
+    \item \textbf{Emergency Contact:}
+    \begin{itemize}
+        \item Name: \TextField{}
+        \item Relationship: \TextField{}
+        \item Phone: \TextField{}
+    \end{itemize}
+    
+    \item \textbf{Declaration:}
+    \begin{itemize}
+        \item  \CheckBox[]{I hereby declare that the information provided above is true to the best of my knowledge.}
+    \end{itemize}
+\end{enumerate}
+
+\end{document}

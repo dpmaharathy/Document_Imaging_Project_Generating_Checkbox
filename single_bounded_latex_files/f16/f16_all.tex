@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\begin{document}
+
+\title{Document with Different Layout}
+\author{Your Name}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus feugiat dapibus dui, ac pulvinar justo gravida eget. Nullam quis tempor est.
+
+\section{Main Content}
+\subsection{Features}
+\begin{itemize}[label=\textbullet]
+    \item Lorem ipsum dolor sit amet
+    \item Consectetur adipiscing elit
+    \begin{itemize}[label=-]
+        \item Phasellus feugiat dapibus dui
+        \begin{itemize}[label=*]
+            \item Nullam quis tempor est
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsection{Tasks}
+\begin{enumerate}
+    \item Lorem ipsum dolor sit amet
+    \item Consectetur adipiscing elit
+    \begin{enumerate}
+        \item Phasellus feugiat dapibus dui
+        \begin{enumerate}
+            \item Nullam quis tempor est
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Checklist}
+\begin{itemize}[label=--, leftmargin=*]
+    \item[]  \CheckBox[bordercolor = 1 1 1, ]{Lorem ipsum dolor sit amet}
+    \item[]  \CheckBox[bordercolor = 1 1 1, ]{Consectetur adipiscing elit}
+    \item[]  \CheckBox[bordercolor = 1 1 1, ]{Phasellus feugiat dapibus dui}
+    \item[]  \CheckBox[bordercolor = 1 1 1, ]{Nullam quis tempor est}
+\end{itemize}
+
+
+
+\end{document}

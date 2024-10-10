@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+% Define colors
+\definecolor{headercolor}{RGB}{0, 0, 128}
+\definecolor{footerlinecolor}{RGB}{192, 192, 192}
+
+% Header and footer setup
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{{\color{headercolor} For more information, visit our website:} \url{www.window.state.tx.us/taxinfo/proptax}}
+\lfoot{{\color{headercolor} Page 2 - 50-305 - 10-13/2}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\footrule}{{\color{footerlinecolor}\hrule width\headwidth height\footrulewidth \vskip-\footrulewidth}}
+
+\begin{document}
+
+% Property Tax Header
+\noindent
+\textbf{\colorbox{headercolor}{\parbox{\dimexpr\textwidth-2\fboxsep}{\color{white}\textbf{Property Tax \hspace{3mm} Form 50-305}}}}
+
+\vspace{2mm} % Spacing
+
+% Military Property Owner's Header
+\noindent
+{\large \textbf{Military Property Owner’s Request for Waiver of Delinquent Penalty and Interest}}
+
+\vspace{2mm} % Spacing
+
+% Step 3
+\noindent
+\textbf{STEP 3: Military Duty Return}
+
+\noindent
+Branch of Service: \underline{\hspace{5cm}}
+
+Please attach a copy of active duty service and transfer order.
+
+Please provide the following applicable dates:
+
+\noindent
+Discharge from active military service: \textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}
+
+Return to the state: \textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}
+
+Return to non-active duty status in the reserves: \textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}
+
+War or national emergency end date: \textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}
+
+\vspace{2mm} % Spacing
+
+% Step 4
+\noindent
+\textbf{STEP 4: Certification and Signature}
+
+\noindent
+By signing this request, you certify the information in this document and any information attached is true and correct to the best of your knowledge and belief.
+
+\vspace{5mm} % Spacing for signature
+
+\noindent
+\textbf{Print Name} \textcolor{headercolor}{\underline{\hspace{7cm}}} \textbf{Date} \textcolor{headercolor}{\underline{\hspace{3cm}}}
+
+\vspace{2mm} % Spacing
+
+\noindent
+\textbf{Authorized Signature} \textcolor{headercolor}{\underline{\hspace{7.5cm}}}
+
+\vspace{2mm} % Warning message
+\noindent
+If you make a false statement on this application, you could be found guilty of a Class A misdemeanor or a state jail felony under Penal Code Section 37.10.
+
+\vspace{2mm} % Spacing
+
+% Office Use Only Section
+\noindent
+\textbf{Office Use Only:}
+
+\noindent
+\CheckBox[bordercolor = 0 0 0,  name=waiverapproved]{} Waiver approved \textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}} \hfill
+\newline
+\CheckBox[bordercolor = 1 1 1, name=waiverdenied]{} Waiver denied \textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}
+
+\noindent
+Property owner notified: \textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}
+
+\noindent
+Taxing units notified: \textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}
+
+\noindent
+Delinquent tax attorney notified: \textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}/\textcolor{headercolor}{\underline{\hspace{2cm}}}
+
+\end{document}

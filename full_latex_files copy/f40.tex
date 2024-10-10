@@ -1,0 +1,43 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{amssymb} % for checkboxes
+\usepackage{graphicx} % for the VA logo if you have it
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+% Checkboxes
+\newcommand{\checkbox}{\ensuremath{\square}}
+
+% Set page style to empty to not include page numbers
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{VA FORM 21-0960C-10 FEB 2015}
+\fancyfoot[R]{Page 1}
+
+\begin{document}
+
+\begin{center}
+\textbf{Department of Veterans Affairs} \\
+\textbf{Peripheral Nerves Conditions (Not Including Diabetic Sensory- Motor Peripheral Neuropathy)} \\
+Disability Benefits Questionnaire
+\end{center}
+
+% Header with VA logo if available
+% \noindent
+% \includegraphics[width=1in]{va_logo.png} % Example for including VA logo
+
+% Patient/Veteran Information
+\noindent
+NAME OF PATIENT/VETERAN \hrulefill PATIENT/VETERAN'S SOCIAL SECURITY NUMBER \hrulefill
+
+\section*{SECTION I - DIAGNOSIS}
+
+\noindent
+1A. DOES THE VETERAN HAVE A PERIPHERAL NERVE CONDITION OR PERIPHERAL NEUROPATHY? \\
+\CheckBox[]{Yes} \CheckBox{No} \hfill (If "Yes," complete Item 1B)
+
+\noindent
+1B. PROVIDE ONLY DIAGNOSES THAT PERTAIN TO A PERIPHERAL NERVE CONDITION AND
+
+\end{document}

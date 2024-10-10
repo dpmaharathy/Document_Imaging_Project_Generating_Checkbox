@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{xcolor}
+
+\begin{document}
+
+\begin{Form}
+\textbf{SBI, IIT Bombay}\\
+
+\begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=*]
+    \item \textbf{Student Information:}
+    \begin{itemize}[label={}, leftmargin=*]
+        \item \textbf{Name:} \TextField{}
+        \item \textbf{Roll Number:} \TextField{}
+        \item \textbf{Department:} \TextField{}
+        \item \textbf{Semester:} \TextField{}
+    \end{itemize}
+    
+    \item \textbf{Loan Details:}
+    \begin{itemize}[label={}, leftmargin=*]
+        \item \textbf{Loan Amount (INR):} \TextField{}
+        \item \textbf{Duration of Loan (months):} \TextField{}
+    \end{itemize}
+    
+    \item \textbf{Purpose of Loan:}
+    \begin{itemize}[label={}, leftmargin=*, itemsep=0pt]
+        \item \CheckBox[bordercolor = 1 1 1, ]{\textbf{Tuition Fees}} \hspace{1em}
+        \CheckBox[bordercolor = 1 1 1, ]{\textbf{Hostel Fees}} \hspace{1em}
+         \CheckBox[bordercolor = 1 1 1, ]{\textbf{Mess Fees}} \hspace{1em}
+        \item \CheckBox[bordercolor = 1 1 1, ]{\textbf{Books and Stationery}} \hspace{1em}
+         \CheckBox[bordercolor = 1 1 1, ]{\textbf{Laptop/Computer}} \hspace{1em}
+         \CheckBox[bordercolor = 1 1 1, ]{\textbf{Research Expenses}}
+    \end{itemize}
+    
+    \item \textbf{Income Details:}
+    \begin{itemize}[label={}, leftmargin=*]
+        \item \textbf{Family Income (INR/year):} \TextField{}
+        \item \textbf{Personal Income (if any) (INR/month):} \TextField{}
+    \end{itemize}
+    
+    \item \textbf{Financial Support:}
+    \begin{itemize}[label={}, leftmargin=*, itemsep=0pt]
+        \item \CheckBox[bordercolor = 1 1 1, ]{\textbf{Scholarship}} \hspace{1em} \CheckBox[bordercolor = 1 1 1, ]{\textbf{Part-time Job}} \hspace{1em}
+        
+        \CheckBox[bordercolor = 1 1 1, ]{\textbf{Family Support}} \hspace{1em}
+         \CheckBox[bordercolor = 0 0 0,  ]{\textbf{Savings}} \hspace{1em}
+         \CheckBox[bordercolor = 1 1 1, ]{\textbf{Education Loan from Other Sources}}
+    \end{itemize}
+    
+    \item \textbf{Declaration:}
+    \begin{itemize}[label={}, leftmargin=*]
+        \item \CheckBox[bordercolor = 1 1 1, ]{I hereby declare that the information provided above is true to the best of my knowledge.}
+    \end{itemize}
+\end{enumerate}
+\end{Form}
+
+\end{document}

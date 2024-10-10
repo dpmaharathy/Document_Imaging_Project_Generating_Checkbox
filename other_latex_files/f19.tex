@@ -1,0 +1,52 @@
+\documentclass[12pt,english]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{babel, scrlayer-notecolumn, setspace, booktabs, ragged2e, perpage, xcolor, xspace, blindtext}
+\usepackage{hyperref}
+
+%%%%% Marginnotes with scrlayer-notecolumn, xcolor and perpage
+%% We have to reduce the width of the text using addmargin:
+%% \begin{addmargin}[0cm]{1cm}
+
+\DeclareNewNoteColumn[font=\sffamily\footnotesize\RaggedRight, width=3cm, position=\oddsidemargin+1in+\textwidth-1cm+\marginparsep]{randnot}
+
+\newcounter{Rnnr}
+\MakePerPage{Rnnr}% Counterreset every new page
+% with package perpage, there also is zref-perpage
+\renewcommand{\theRnnr}{\alph{Rnnr}}% print letters as anchors
+\newcommand{\Anm}[1]{%
+  \refstepcounter{Rnnr}%
+  \textcolor{red}{\textsuperscript{\textit{\theRnnr}}}% Anker im Text
+  \makenote[randnot]{% Randnotiz
+    \textsuperscript{\theRnnr}#1\xspace}} %%Randnotentext
+%%%%% \renewcommand{\Anm[1]}{}
+%%%% deletes Anm
+
+\begin{document}
+\begin{addmargin}[0pt]{1cm}
+  \blindtext\Anm{%
+    \begin{tabular}{lr}
+      Januar & 1\\
+      Februar & 2\\
+      März & 3\\
+    \end{tabular}
+  }
+
+  \blindtext
+
+  \section*{Checklist}
+  Please check the following items:
+  \begin{itemize}
+    \item \CheckBox[] {Item 1}
+    \item \CheckBox[] {Item 2}
+    \item \CheckBox[] {Item 3}
+    \item \CheckBox[] {Item 4}
+  \end{itemize}
+
+  \section*{Additional Information}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus tellus eget felis posuere, vel tempor lorem hendrerit. Donec eleifend sapien a tellus cursus, id maximus neque pellentesque. Phasellus aliquet, ex a pellentesque convallis, odio neque hendrerit libero, sit amet mattis felis dui at lorem. Donec eget mauris eget magna interdum convallis vel sed urna. Morbi vitae turpis et magna fermentum aliquam. Nulla sollicitudin, arcu eget venenatis cursus, felis nulla lacinia purus, ut maximus urna nulla sed velit.
+
+  \section*{Conclusion}
+  In conclusion, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+\end{addmargin}
+\end{document}  

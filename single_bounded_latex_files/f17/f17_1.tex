@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{enumitem}
+% \usepackage{geometry}
+\usepackage{hyperref}
+% Set font to Times New Roman
+\usepackage{times}
+
+% Adjust margins
+% \geometry{top=2cm, bottom=2cm, left=3cm, right=3cm}
+
+\begin{document}
+
+\title{Document with Different Layout and Font}
+\author{Your Name}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+\subsection{Overview}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus feugiat dapibus dui, ac pulvinar justo gravida eget. Nullam quis tempor est.
+
+\subsection{Main Content}
+\subsubsection{Features}
+\begin{itemize}[label=\textbullet]
+    \item Lorem ipsum dolor sit amet
+    \item Consectetur adipiscing elit
+    \item Phasellus feugiat dapibus dui
+    \item Nullam quis tempor est
+\end{itemize}
+
+\subsubsection{Tasks}
+\begin{enumerate}
+    \item Lorem ipsum dolor sit amet
+    \item Consectetur adipiscing elit
+    \item Phasellus feugiat dapibus dui
+    \item Nullam quis tempor est
+\end{enumerate}
+
+\subsubsection{Checklist}
+\begin{itemize}
+    \item \CheckBox[bordercolor = 0 0 0,  ]{Lorem ipsum dolor sit amet }
+    \item  \CheckBox[bordercolor = 1 1 1, ]{Consectetur adipiscing elit}
+    \item  \CheckBox[bordercolor = 1 1 1, ]{Phasellus feugiat dapibus dui}
+    \item  \CheckBox[bordercolor = 1 1 1, ]{Nullam quis tempor est}
+\end{itemize}
+
+
+
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb} % for checkboxes
+\usepackage{enumitem} % for itemize settings
+\usepackage{hyperref}
+% For a cleaner look with no page number
+\pagestyle{empty}
+
+% Define the checkbox command
+\newcommand{\checkbox}{$\square$} % Non-interactive checkbox
+
+\begin{document}
+
+% Heading section
+\noindent
+\textbf{Documents Recommended to Be Available}
+
+% Table for the document checklist
+\begin{itemize}[noitemsep] % noitemsep removes space between items for a compact look
+  \item Operations Manual \hfill \CheckBox[bordercolor = 0 0 0,  ]{Satisfactory } \CheckBox[bordercolor = 1 1 1, ]{Unsatisfactory} \\
+  \item CAO s 48 \hfill \CheckBox[bordercolor = 1 1 1, ]{Satisfactory}
+  \CheckBox[bordercolor = 1 1 1, ]{Unsatisfactory} \\
+  \item Copies of appropriate exemptions \hfill \CheckBox[bordercolor = 1 1 1, ]{Satisfactory} \CheckBox[bordercolor = 1 1 1, ]{Unsatisfactory} \\
+\end{itemize}
+
+% Signature section
+\vspace{2em}
+\noindent
+Signed \hrulefill \\
+\noindent
+Flying Operations Inspector
+
+\vspace{1em}
+\noindent
+Date \hrulefill \hfill Printed Name \hrulefill
+
+% Footer section
+\vfill % Pushes footer to the bottom of the page
+\noindent
+Form 858 (04/99) \hfill aoc-checklist-inspection of flight crew scheduling \hfill Page 2 of 2
+
+\end{document}

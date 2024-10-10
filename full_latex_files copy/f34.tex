@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amssymb} % for checkboxes
+\usepackage{enumitem} % for itemize settings
+\usepackage{hyperref}
+% Checkboxes
+\newcommand{\checkbox}{\ensuremath{\square}}
+
+% For creating lines for text entries
+\newcommand{\textline}[1]{\makebox[#1]{\hrulefill}}
+
+\begin{document}
+\pagestyle{empty} % No page numbers
+
+% Title section
+\noindent
+\textbf{The purchaser took on the following costs and expenses in connection with the contract:}
+
+% Costs table
+\noindent
+\begin{tabular}{|p{4in}|p{1in}|}
+\hline
+\textbf{Type of cost or expenses} & \textbf{Amount} \\
+\hline
+ &  \\
+\hline
+ &  \\
+\hline
+ &  \\
+\hline
+\end{tabular}
+
+\vspace{10pt}
+\noindent
+\textbf{Preliminary Statement of Debt} \\
+As required by Section 23-18(b) of the Connecticut Practice Book, the following is a preliminary statement of the plaintiff's monetary claim in the foreclosure action:
+
+% Debt table
+\noindent
+\begin{tabular}{|p{2.5in}|p{1.5in}|p{1.5in}|}
+\hline
+Principal balance as of: & \textline{1.5in} & Principal Balance Amount \\
+\hline
+Accrued Interest from & \textline{1.5in} & to \textline{1.5in} \\
+ & & Accrued Interest Amount \\
+\hline
+at the rate of & \multicolumn{2}{l|}{\textline{1.5in} \% per year} \\
+\hline
+Late Charges & \multicolumn{2}{l|}{Late Charges Amount} \\
+\hline
+Escrow balance for taxes and insurance & \multicolumn{2}{l|}{Escrow Balance Amount} \\
+\hline
+Other (specify type below) & \multicolumn{2}{l|}{Other Amount} \\
+\hline
+\end{tabular}
+
+\vspace{10pt}
+\noindent
+Plus counsel fees and court costs.
+
+\vspace{10pt}
+\noindent
+\textline{3in} \hfill \textline{2in} \hfill \textline{1in} \\
+Signed (Plaintiff or Plaintiff's Attorney) \hfill Print Name \hfill Date
+
+\vspace{10pt}
+\noindent
+\CheckBox[]{Enter a judgment of foreclosure by market sale;} \\
+\CheckBox[]{Approve the purchase and sale contract;} 
+
+\vspace{10pt}
+\noindent
+\textline{3in} \hfill \textline{2in} \hfill \textline{1in} \\
+Signed (Plaintiff or Plaintiff's Attorney) \hfill Print Name \h
+
+\end{document}

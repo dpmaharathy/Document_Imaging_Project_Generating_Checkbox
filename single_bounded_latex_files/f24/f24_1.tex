@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+\begin{document}
+\thispagestyle{empty} % Removes page numbers
+
+% Debtor information
+\noindent
+Debtor 1 \underline{\makebox[2in][l]{}} \underline{\makebox[1in][l]{}} \underline{\makebox[2in][l]{}} \hfill Case number (if known) \underline{\makebox[2in][l]{}}
+
+% Part 2: Sign Here section
+\section*{Part 2: \underline{Sign Here}}
+
+The person completing this Notice must sign it. Sign and print your name and your title, if any, and state your address and telephone number.
+
+Check the appropriate box.
+
+\noindent
+\CheckBox[bordercolor = 0 0 0,  name=creditor]{} I am the creditor. \hfill
+\newline
+\newline
+\CheckBox[bordercolor = 1 1 1, name=agent]{} I am the creditor's authorized agent.
+
+I declare under penalty of perjury that the information provided in this claim is true and correct to the best of my knowledge, information, and reasonable belief.
+
+\vspace{5mm} % Some vertical space
+
+\noindent
+\underline{\makebox[2.5in][l]{\raisebox{-2pt}{\textbf{X}}}} \hfill Date \underline{\makebox[1in][l]{\hspace{2em}/\hspace{2em}/}}
+
+\vspace{5mm} % Some vertical space
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}l@{}}
+Print: \underline{\makebox[1.5in][l]{}} \underline{\makebox[1in][l]{}} \underline{\makebox[1.5in][l]{}} \hfill Title \underline{\makebox[2.5in][l]{}} \\
+\end{tabularx}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}l@{}}
+Company \underline{\makebox[2.5in][l]{}} \\
+\end{tabularx}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}l@{}}
+Address \underline{\makebox[1in][l]{}} \underline{\makebox[2.5in][l]{}} \\
+\end{tabularx}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}lXl@{}}
+City \underline{\makebox[2.25in][l]{}} \hfill State \underline{\makebox[.5in][l]{}} \hfill ZIP Code \underline{\makebox[1in][l]{}} \\
+\end{tabularx}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}l@{}}
+Contact phone (\underline{\makebox[.5in][l]{}})\underline{\makebox[1.5in][l]{}} \hfill Email \underline{\makebox[3in][l]{}} \\
+\end{tabularx}
+
+\vfill % Push the footer to the bottom of the page
+
+\noindent
+{\footnotesize Official Form 410S2 \hfill Notice of Postpetition Mortgage Fees, Expenses, and Charges \hfill page 2}
+
+\end{document}

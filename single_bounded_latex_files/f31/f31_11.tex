@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+% Checkbox command
+\newcommand{\checkbox}{\Square}
+
+% Header setup
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{}
+\fancyfoot[R]{}
+
+% To define the gray color for section titles
+\definecolor{sectiontitle}{gray}{0.6}
+
+% Define macro for section titles
+\newcommand{\sectiontitle}[1]{{\large\textbf{#1}}\vspace{6pt}\hrule\vspace{6pt}}
+
+\begin{document}
+
+% Title section with logo
+\noindent
+\begin{minipage}[b]{0.75\textwidth}
+    \Large{\textbf{Delaware Department of Justice}} \\
+    \large{\textbf{Employment Application}}
+\end{minipage}%
+\begin{minipage}[b]{0.25\textwidth}
+    \includegraphics[width=1in]{example-image} % Placeholder for logo
+\end{minipage}
+
+% Form Fields
+\sectiontitle{1. Registered Person Particulars}
+
+Last Name \underline{\hspace{5cm}} First Name \underline{\hspace{5cm}} M.I. \underline{\hspace{1.5cm}} County \underline{\hspace{3.5cm}}
+
+Mailing Address \underline{\hspace{5cm}} City \underline{\hspace{4.5cm}} State \underline{\hspace{0.5cm}} Zip Code \underline{\hspace{2.5cm}}
+
+Home Phone \underline{\hspace{4.5cm}} Work Phone \underline{\hspace{4.5cm}} May we call you at work? \CheckBox[bordercolor = 1 1 1, ]{Yes} \CheckBox[bordercolor = 1 1 1, ]{No}
+
+% Example for Job Location Checkbox section
+DOJ job applying for: \underline{\hspace{5cm}}
+
+Division: \underline{\hspace{5cm}}
+
+Job Location(s) applied for: New Castle \CheckBox[bordercolor = 1 1 1, ]{Kent} \CheckBox[bordercolor = 1 1 1, ]{Sussex} \CheckBox[bordercolor = 1 1 1, ]{City of Wilmington} 
+
+Will you accept: Permanent \CheckBox[bordercolor = 1 1 1, ]{Temporary} \CheckBox[bordercolor = 1 1 1, ]{Full Time} \CheckBox[bordercolor = 1 1 1, ]{Part Time} 
+
+Education / training: \CheckBox[bordercolor = 1 1 1, ]{High School/GED} \CheckBox[bordercolor = 1 1 1, ]{Vocational/Business School}
+
+Name \& Location of College / University \underline{\hspace{5cm}} Dates Attended \underline{\hspace{5cm}} Major / Minor \underline{\hspace{5cm}} Type of Degree \underline{\hspace{5cm}}
+
+Occupational Licenses / Bar Admissions \underline{\hspace{4cm}} Issued by / \# \underline{\hspace{4cm}} Date Acquired \underline{\hspace{4cm}}
+
+% Language Skills
+Language(s) other than English
+
+\CheckBox[bordercolor = 0 0 0,  ]{Speak} \CheckBox[bordercolor = 1 1 1, ]{Read} \CheckBox[bordercolor = 1 1 1, ]{Write}
+
+% Footer
+\vfill
+% Footer will include the form number and revision date, aligned to the right
+\rule{\textwidth}{0.4pt}
+\textcolor{sectiontitle}{\footnotesize{Form must be completed in full.}}
+
+\end{document}

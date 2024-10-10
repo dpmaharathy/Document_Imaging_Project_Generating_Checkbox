@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\begin{document}
+
+\begin{Form}
+\textbf{Income Tax Return Form}
+
+\begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=*]
+    \item \textbf{Personal Information:}
+    \begin{itemize}[label={}, leftmargin=*]
+        \item \textbf{Name:} \TextField{}
+        \item \textbf{Social Security Number:} \TextField{}
+        \item \textbf{Date of Birth:} \TextField{}
+        \item \textbf{Address:} \TextField{}
+    \end{itemize}
+    
+    \item \textbf{Income Sources:}
+    \begin{itemize}[label={}, leftmargin=*]
+        \item \CheckBox[bordercolor = 1 1 1, ][width=2em,height=2em]{Salary/Wages}
+         \CheckBox[bordercolor = 1 1 1, ][width=2em,height=2em]{Interest Income}
+         \CheckBox[bordercolor = 1 1 1, ][width=2em,height=2em]{Dividend Income}
+        \item \CheckBox[bordercolor = 1 1 1, ][width=2em,height=2em]{Rental Income}
+         \CheckBox[bordercolor = 0 0 0,  ][width=2em,height=2em]{Business Income}
+         \CheckBox[bordercolor = 1 1 1, ][width=2em,height=2em]{Capital Gains}
+    \end{itemize}
+    
+    \item \textbf{Deductions:}
+    \begin{itemize}[label={}, leftmargin=*]
+        \item \CheckBox[bordercolor = 1 1 1, ][width=3em,height=3em]{Retirement Contributions}
+         \CheckBox[bordercolor = 1 1 1, ][width=3em,height=3em]{Health Savings Account Contributions}
+         \CheckBox[bordercolor = 1 1 1, ][width=3em,height=3em]{Education Expenses}
+        \item \CheckBox[bordercolor = 1 1 1, ][width=3em,height=3em]{Mortgage Interest}
+         \CheckBox[bordercolor = 1 1 1, ][width=3em,height=3em]{Charitable Contributions}
+    \end{itemize}
+    
+    \item \textbf{Tax Credits:}
+    \begin{itemize}[label={}, leftmargin=*]
+        \item \CheckBox[bordercolor = 1 1 1, ][width=3em,height=3em]{Child Tax Credit}
+         \CheckBox[bordercolor = 1 1 1, ][width=3em,height=3em]{Earned Income Tax Credit}
+        \item \CheckBox[bordercolor = 1 1 1, ][width=3em,height=3em]{Education Credits}
+         \CheckBox[bordercolor = 1 1 1, ][width=3em,height=3em]{Foreign Tax Credit}
+    \end{itemize}
+    
+    \item \textbf{Tax Payment:}
+    \begin{itemize}[label={}, leftmargin=*]
+        \item \CheckBox[bordercolor = 1 1 1, ][width=2em,height=2em]{Tax Withheld}
+        \item \CheckBox[bordercolor = 1 1 1, ][width=2em,height=2em]{Estimated Tax Payments}
+    \end{itemize}
+    
+    \item \textbf{Declaration:}
+    \begin{itemize}[label={}, leftmargin=*]
+        \item \CheckBox[bordercolor = 1 1 1, ][width=1em,height=1em]{I declare that the information provided above is true and correct to the best of my knowledge.}
+    \end{itemize}
+\end{enumerate}
+\end{Form}
+
+\end{document}

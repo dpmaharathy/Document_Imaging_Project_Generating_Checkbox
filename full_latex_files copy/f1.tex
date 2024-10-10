@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{enumitem} % Load enumitem before hyperref
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+
+\begin{document}
+
+\begin{Form}
+\section*{Medical Information Form}
+
+\subsection*{Personal Information}
+\begin{tabular}{|p{3.5cm}|p{6cm}|}
+    \hline
+    Name: & \TextField[name=name, width=6cm]{} \\
+    \hline
+    Date of Birth: & \TextField[name=dob, width=6cm]{} \\
+    \hline
+    Gender: & \ChoiceMenu[combo,name=gender, width=6cm]{}{Male, Female} \\
+    \hline
+\end{tabular}
+
+\subsection*{Medical History}
+\begin{itemize}
+    \item[\textcolor{white}{\fbox{\CheckBox[name=allergy1]{}}}] Allergy1
+    \item[\textcolor{white}{\fbox{\CheckBox[name=allergy2]{}}}] Allergy2
+    \item[\textcolor{white}{\fbox{\CheckBox[name=allergy3]{}}}] Allergy3
+\end{itemize}
+
+\subsection*{Consent}
+I hereby authorize the release of any medical information necessary to process my claim.\\[0.2cm]
+\CheckBox[name=consent]{} I consent to the release of my medical information.
+
+\subsection*{Signature}
+\TextField[name=signature, width=6cm]{}
+
+\subsection*{Date}
+\TextField[name=date, width=6cm]{}
+
+\end{Form}
+
+\end{document}
